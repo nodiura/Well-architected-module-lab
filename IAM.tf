@@ -1,4 +1,6 @@
-
+provider "aws" {
+  region = var.region
+}
 resource "aws_iam_role" "SPToolS3Lambda" {
   name = "SPToolS3Lambda${var.env}"
 
